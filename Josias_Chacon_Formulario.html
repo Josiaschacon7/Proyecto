@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Civilización de Chavín</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.png" alt="Logo de institución">
+        <h1>La Civilización de Chavín</h1>
+
+    </header>
+    <div class="marquesina">
+        <marquee behavior="scroll" direction="left" scrollamount="8">
+             Bienvenidos al sitio web sobre la Civilización Chavín — Cultura milenaria del Antiguo Perú 🇵🇪 — ¡Explora su historia, arte y legado! 
+        </marquee>
+    </div>
+    <form action="#" name="solucionFormulario">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" maxlength="30">
+          
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="correo@empresa.com" maxlength="30">
+          
+        <label for="asunto">Asunto</label>
+        <select name="asunto" id="asunto">
+        <option value="InformacionWeb">Pedir Información Web</option>
+        <option value="CitaPrevia">Solicitar Cita Previa</option>
+        <option value="Otros">Otros</option>
+        </select>
+        
+        <label for="marketing">¿Cómo nos has conocido?</label>
+        <div class="marketing">
+            <input type="checkbox" value="amigo" id="amigo"><label for="amigo">Un amigo</label>
+            <input type="checkbox" value="google" id="googleando"><label for="googleando">Googleando</label>
+            <input type="checkbox" value="redsocial" id="redsocial"><label for="redsocial">Red social</label>
+            <input type="checkbox" value="otros" id="otros"><label for="otros">Otros</label>
+        </div>
+        <label for="mensaje">Escribe tu mensaje</label>
+        <textarea name="mensaje" id="mensaje" maxlength="300"></textarea>
+        <input type="checkbox" value="Acepta RGPD" id="rgpd" required>
+        <label for="rgpd" class="rgpd">He leído y acepto el <a href="#" target="_blank">aviso legal y la política de privacidad</a></label>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Menú  -->
+    <nav class="menu-vertical">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Josias_Chacon_Ubicacion.html">Ubicación</a>
+                <ul>
+                    <li><a href="Josias_Chacon_Mapa.html">Mapa de Chavín</a></li>
+                </ul>
+            </li>
+            <li><a href="Josias_Chacon_Historia.html">Historia</a>
+                <ul>
+                    <li><a href="Josias_Chacon_Cultura.html">cultura</a></li>
+                    <li><a href="Josias_Chacon_Arquitectura.html">Arquitectura</a></li>
+                    <li><a href="Josias_Chacon_Religion.html">Religión</a></li>
+
+                </ul>
+            </li>
+            <li><a href="Josias_Chacon_Economia.html">Economía</a></li>
+            <li><a href="Josias_Chacon_Sociedad.html">Sociedad</a></li>
+            <li><a href="Josias_Chacon_Galeria.html">Galería</a></li>
+            <li><a href="Josias_Chacon_Formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+    <footer class="footer">
+        <p>Derechos Reservados Josías Misael Chacón Estrada III BTP Robótica &copy; 2025</p>
+    </footer>
+</body>
+</html>

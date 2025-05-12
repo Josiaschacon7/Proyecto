@@ -1,0 +1,544 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f5ed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #5e412f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.header img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 100px;
+}
+
+.marquesina {
+    background-color: #a77c53; 
+    color: #fff;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 15px auto;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-vertical {
+    position: absolute;
+    top: 205px; 
+    right: 40px;
+    width: 200px;
+    background-color: #a67c52;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+
+
+    min-height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.menu-vertical ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-vertical li {
+    position: center;
+}
+
+.menu-vertical a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+.menu-vertical a:hover {
+    background-color: #8b5e3c;
+}
+
+.menu-vertical li ul {
+    display: none;
+    background-color: #c89f72;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.menu-vertical li:hover ul {
+    display: block;
+    position: relative;
+}
+
+
+.contenido {
+    margin-right: 300px; 
+    padding: 40px;
+    text-align: justify;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.imagenes img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #a67c52;
+}
+
+.footer {
+    background-color: #5e412f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+textarea{
+    resize: none;
+}
+@media (max-width: 768px){
+    form{
+        padding: 10px;
+    }
+    input, select, textarea, button{
+        font-size: 14px;
+    }
+}
+
+        .historia-chavin .imagen-historia {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .historia-chavin .imagen-historia img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+        textarea{
+            resize: none;
+        }
+        @media (max-width: 768px){
+            form{
+                padding: 10px;
+            }
+            input, select, textarea, button{
+                font-size: 14px;
+            }
+        }
+        
+        .cultura-chavin {
+            padding: 15px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .cultura-chavin h2 {
+            color: #5e412f;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .cultura-chavin p {
+            margin-bottom: 8px;
+        }
+
+        .cultura-chavin table {
+            width: 60%;
+            margin: 10px auto;
+            border-collapse: collapse;
+        }
+
+        .cultura-chavin th, .cultura-chavin td {
+            border: 1px solid #ccc;
+            padding: 6px;
+            text-align: left;
+        }
+
+        .cultura-chavin th {
+            background-color: #a67c52;
+            color: white;
+        }
+
+        .imagenes-cultura {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .imagenes-cultura img {
+            width: 180px;
+            height: auto;
+            border-radius: 3px;
+            object-fit: cover;
+            margin-bottom: 8px;
+        }
+        textarea{
+            resize: none;
+        }
+        @media (max-width: 768px){
+            form{
+                padding: 10px;
+            }
+            input, select, textarea, button{
+                font-size: 14px;
+            }
+        }
+        
+        .arquitectura-chavin {
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .arquitectura-chavin h2 {
+            color: #5e412f;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .arquitectura-chavin p {
+            margin-bottom: 15px;
+        }
+
+        .arquitectura-chavin .imagen-arquitectura {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .arquitectura-chavin .imagen-individual {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .arquitectura-chavin .imagen-izquierda {
+            float: left;
+            margin: 10px 20px 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .arquitectura-chavin .imagen-derecha {
+            float: right;
+            margin: 10px 0 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+        }
+        textarea{
+            resize: none;
+        }
+        @media (max-width: 768px){
+            form{
+                padding: 10px;
+            }
+            input, select, textarea, button{
+                font-size: 14px;
+            }
+        }
+        
+ .religion-chavin {
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .religion-chavin h2 {
+            color: #5e412f;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .religion-chavin p {
+            margin-bottom: 15px;
+        }
+
+
+        .religion-chavin .imagen-central {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+
+        .religion-chavin .imagen-izquierda-texto {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+
+        .religion-chavin .imagen-izquierda-texto img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+        textarea{
+            resize: none;
+        }
+        .religion-chavin .texto-derecha {
+            flex-grow: 1;
+        }
+                .economia-chavin {
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (max-width: 768px){
+            form{
+                padding: 10px;
+            }
+            input, select, textarea, button{
+                font-size: 14px;
+            }
+        }
+        
+
+        .economia-chavin h2 {
+            color: #5e412f;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .economia-chavin p {
+            margin-bottom: 15px;
+            max-width: 700px;
+        }
+
+        .economia-chavin ul {
+            margin-bottom: 15px;
+            max-width: 600px;
+        }
+        textarea{
+            resize: none;
+        }
+        .economia-chavin li {
+            margin-bottom: 8px;
+        }
+                .sociedad-chavin {
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.7;
+        }
+        @media (max-width: 768px){
+            form{
+                padding: 10px;
+            }
+            input, select, textarea, button{
+                font-size: 14px;
+            }
+        }
+        
+
+        .sociedad-chavin h2 {
+            color: #5e412f;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .sociedad-chavin p {
+            margin-bottom: 15px;
+        }
+
+        .sociedad-chavin table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sociedad-chavin th, .sociedad-chavin td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .sociedad-chavin th {
+            background-color: #a67c52;
+            color: white;
+        }
+        textarea{
+            resize: none;
+        }
+        .imagen-sociedad-derecha {
+            float: right;
+            margin: 15px 0 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+        }
+        @media (max-width: 768px){
+            form{
+                padding: 10px;
+            }
+            input, select, textarea, button{
+                font-size: 14px;
+            }
+        }
+        
+ .galeria-chavin {
+            padding: 20px;
+        }
+
+        .galeria-chavin h2 {
+            color: #5e412f;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .galeria-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 10px;
+        }
+        textarea{
+            resize: none;
+        }
+        .galeria-info {
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 0 0 8px 8px;
+            width: 100%;
+        }
+
+        .galeria-info h3 {
+            font-size: 1em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .galeria-info p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 0;
+        }       
+        @media (max-width: 768px){
+            form{
+                padding: 10px;
+            }
+            input, select, textarea, button{
+                font-size: 14px;
+            }
+        }
+
+.pagina2 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #c89f72;
+}
+
+
+form{
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 35px;
+    background: rgb(177, 141, 125);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #c89f72;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea, button{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #8ce9f0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea{
+    resize: none;
+}
+button{
+    background-color: springgreen;
+    color: darkkhaki;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: darkgreen;
+}
+
+@media (max-width: 768px){
+    form{
+        padding: 10px;
+    }
+    input, select, textarea, button{
+        font-size: 14px;
+    }
+}
